@@ -73,6 +73,7 @@ export class TeacherService {
      As a teacher, I want to retrieve a list of students common to a given list of teachers 
      (i.e. retrieve students who are registered to ALL of the given teachers).
      **** 
+     *
      */
     async findStudentByTeacherEmail(teacher: string[]): Promise<StudentDto> {
         let studentDto = new StudentDto();
