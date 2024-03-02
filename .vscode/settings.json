@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "db/sql",
+            "database": "${workspaceFolder:apitcstnotification}/db/sql"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "git.enableCommitSigning": true
+}
