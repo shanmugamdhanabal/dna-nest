@@ -32,6 +32,10 @@
 $ npm install
 ```
 
+## Run testing 
+
+npm run test 
+
 ## Running the app
 
 ```bash
