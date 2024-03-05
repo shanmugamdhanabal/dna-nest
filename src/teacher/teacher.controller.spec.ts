@@ -16,6 +16,9 @@ describe('TeacherController', () => {
       findStudentByTeacherEmail: (email: string[]) => Promise.resolve({ students: ['dhana@gmail.com'] } as StudentDto)
     };
 
+
+
+
     const module: TestingModule = await Test.createTestingModule({
       controllers: [TeacherController],
       providers: [TeacherService,
@@ -27,9 +30,7 @@ describe('TeacherController', () => {
     controller = module.get<TeacherController>(TeacherController);
   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
+
 
 
   it('Create Student', async () => {

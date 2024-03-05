@@ -22,21 +22,38 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Title
+
+Teacher Student Registration & Notification.
+
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) Teacher will register student and send notification, Teacher also select a student and suspend them too.
+
+API serves for teacher only 
 
 ## Installation
+
+Step 1: Install NodeJS 20+
+
+Step 2: Open the project directory it the terminal or VSCode Terminal run below command
 
 ```bash
 $ npm install
 ```
 
-## Run testing 
+## Run testing without watch mode / Unit testing 
 
+```bash
 npm run test 
+```
 
-## Running the app
+## Run testing with watch mode 
+```bash
+npm run test:watch
+```
+
+## Running the app use below commands
 
 ```bash
 # development
@@ -49,26 +66,22 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
+## Dockerize the application 
 ```bash
-# unit tests
-$ npm run test
+## Build docker image
+docker build -t apitcstnotification . 
 
-# e2e tests
-$ npm run test:e2e
+## Run the docker image
 
-# test coverage
-$ npm run test:cov
+docker run --rm -p 3000:3000 apitcstnotification
 ```
-
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Author - [Shanmugam Dhanabal](https://github.com/shanmugamdhanabal/dna-nest)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 

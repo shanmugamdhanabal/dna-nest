@@ -86,7 +86,7 @@ export class TeacherService {
                     query.andWhere('teacher.email=:email', { email: emailObj })
                 })
                 query.distinct(true)
-                //console.log("Teacher Student Query : " + query.getSql());
+                console.log("Teacher Student Query : " + query.getSql());
                 const response = await query.getMany();
                 if (!response) {
                     throw new NotFoundException(`Student with ID ${teacher} not found`);
